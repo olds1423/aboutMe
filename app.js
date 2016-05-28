@@ -29,16 +29,14 @@ function quiz() {
         alert ("Poorly done.\nTry again.");
       }
 //Start of the first real logical questions below
-    var questionFive = prompt ("What is my favorite number?");
-      while (questionFive != favoriteNumber) {
-        questionFive = prompt ("Nope try again")
+    var questionFive = parseInt(prompt ("What is my favorite number?"));
+      while (questionFive !== favoriteNumber) {
+        if (questionFive >= favoriteNumber) {
+        questionFive = parseInt(prompt ("Too high!"));
+        }
+        else if (questionFive <= favoriteNumber){
+        questionFive = parseInt(prompt ("Too low!"));
+        }
       }
-    //   questionFive = prompt("Nope, try again");
-    // }
-    // var i = 1:
-    // do {
-    //   console.log(i);
-    //   i++;
-    // } while (i < 1);
-    console.log(questionFive);
+    alert ("Nice!")
 }
