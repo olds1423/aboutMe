@@ -1,4 +1,5 @@
 //The Javascript portion of the About Me project
+var favoriteNumber = 13;
 function quiz() {
     confirm("Please answer the following questions with simple Y/N answers.")
 
@@ -27,4 +28,17 @@ function quiz() {
       } else {
         alert ("Poorly done.\nTry again.");
       }
+//Start of the first real logical questions below
+    var questionFive = prompt ("What is my favorite number?");
+      while (questionFive != favoriteNumber) {
+        questionFive = prompt ("Nope try again")
+      }
+    //   questionFive = prompt("Nope, try again");
+    // }
+    // var i = 1:
+    // do {
+    //   console.log(i);
+    //   i++;
+    // } while (i < 1);
+    console.log(questionFive);
 }
