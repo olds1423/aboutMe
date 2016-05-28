@@ -1,5 +1,6 @@
 //The Javascript portion of the About Me project
 var favoriteNumber = 13;
+var amountCorrect = 0;
 function quiz() {
     confirm("Please answer the following questions with simple Y/N answers.")
 
