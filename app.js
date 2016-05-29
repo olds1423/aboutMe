@@ -35,24 +35,51 @@ function quiz() {
         alert ("Poorly done.\nTry again.");
       }
 //Start of the first real logical questions below
-        console.log(amountCorrect);
-        var counter = 3
-        var questionFive = parseInt(prompt ("What is my favorite number?"));
-          while (questionFive !== favoriteNumber && counter >= 0) {
-            console.log('running while loop');
-            if (questionFive >= favoriteNumber) {
-              console.log('inside while/if');
-              questionFive = parseInt(prompt ("Too high!"));
-              --counter;
-              console.log(counter);
-            }
-            else if (questionFive <= favoriteNumber){
-              console.log('inside while/elseif');
-              questionFive = parseInt(prompt ("Too low!"));
-              --counter;
-              console.log(counter);
-            }
-          }
-    // }
-    alert ("Nice!")
-}
+      console.log(amountCorrect);
+    var counter = 3;
+    var questionFive = parseInt(prompt ("What is my favorite number?"));
+    while (questionFive !== favoriteNumber && counter >= 0) {
+      console.log('running while loop');
+      if (questionFive >= favoriteNumber) {
+        console.log('inside while/if');
+        questionFive = parseInt(prompt ("Too high!"));
+        --counter;
+        console.log(counter);
+      }
+      else if (questionFive <= favoriteNumber){
+        console.log('inside while/elseif');
+        questionFive = parseInt(prompt ("Too low!"));
+        --counter;
+        console.log(counter);
+      }
+    }
+    if (questionFive === favoriteNumber) {
+      alert("Nicely done!");
+      amountCorrect +=1;
+    }
+    else if (questionFive !== favoriteNumber){
+      alert("Better luck next time.");
+    }
+    var counterTwo = 4;
+    var myStates = ["washington", "idaho", "montana", "oregon", "hawaii"];
+    // do i have to have the prompt access the indicies ?
+    console.log(myStates);
+    var questionSix = prompt ("What states have I lived in?").toLowerCase();{
+      while (questionSix !== myStates && counterTwo >= 0) {
+        console.log("running second while loop");
+        console.log(questionSix);
+        if (questionSix === myStates) {
+          questionSix = prompt( "Nicely done! I have lived in;" + myStates);
+          console.log(questionSix);
+          console.log(myStates);
+        }
+        else if (questionSix !== myStates){
+          questionSix = prompt("No sorry, you have ");
+          console.log(myStates);
+          console.log(questionSix);
+          break;
+        }
+      }
+    }
+    var totalScore = alert("Not too bad, you scored, " + amountCorrect + " out of 7!");
+    }
