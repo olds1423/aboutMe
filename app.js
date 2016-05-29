@@ -35,24 +35,27 @@ function quiz() {
         alert ("Poorly done.\nTry again.");
       }
 //Start of the first real logical questions below
-        console.log(amountCorrect);
-        var counter = 3
-        var questionFive = parseInt(prompt ("What is my favorite number?"));
-          while (questionFive !== favoriteNumber && counter >= 0) {
-            console.log('running while loop');
-            if (questionFive >= favoriteNumber) {
-              console.log('inside while/if');
-              questionFive = parseInt(prompt ("Too high!"));
-              --counter;
-              console.log(counter);
-            }
-            else if (questionFive <= favoriteNumber){
-              console.log('inside while/elseif');
-              questionFive = parseInt(prompt ("Too low!"));
-              --counter;
-              console.log(counter);
-            }
-          }
-    // }
-    alert ("Nice!")
-}
+      console.log(amountCorrect);
+      var counter = 3;
+      var questionFive = parseInt(prompt ("What is my favorite number?"));
+      while (questionFive !== favoriteNumber && counter >= 0) {
+        console.log('running while loop');
+        if (questionFive >= favoriteNumber) {
+          console.log('inside while/if');
+          questionFive = parseInt(prompt ("Too high!"));
+          --counter;
+          console.log(counter);
+        }
+        else if (questionFive <= favoriteNumber){
+          console.log('inside while/elseif');
+          questionFive = parseInt(prompt ("Too low!"));
+          --counter;
+          console.log(counter);
+        }
+      }
+        // var counterTwo = 4;
+        // var myStates ["Washington", "Idaho", "Montana", "Oregon", "Hawaii"];
+        // // var questionSix = prompt ("What states have I lived in?");{}
+        //   // while (questionSix )
+        alert ("Nice!")
+    }
