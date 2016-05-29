@@ -53,6 +53,13 @@ function quiz() {
         console.log(counter);
       }
     }
+    if (questionFive === favoriteNumber) {
+      alert("Nicely done!");
+      amountCorrect +=1;
+    }
+    else if (questionFive !== favoriteNumber){
+      alert("Better luck next time.");
+    }
     var counterTwo = 4;
     var myStates = ["washington", "idaho", "montana", "oregon", "hawaii"];
     // do i have to have the prompt access the indicies ?
@@ -74,6 +81,5 @@ function quiz() {
         }
       }
     }
-    var totalScore = prompt("Not too bad, you scored, " + amountCorrect + " out of 7!");
-    alert ("Nice!")
+    var totalScore = alert("Not too bad, you scored, " + amountCorrect + " out of 7!");
     }
