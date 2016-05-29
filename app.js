@@ -73,8 +73,7 @@ function quiz() {
           break;
         }
       }
-    var totalScore = prompt ("Not too bad, you scored" + amountCorrect "out of 7!");
     }
-
+    var totalScore = prompt("Not too bad, you scored, " + amountCorrect + " out of 7!");
     alert ("Nice!")
     }
