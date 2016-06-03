@@ -12,6 +12,7 @@ function yesNo() {
 function quiz() {
   var userName = prompt ("Let's get to know you! \nWhats your name?");
   alert("Great! Thanks" + " " + userName + ".");
+  
 }
 // function quiz() {
 //     confirm("Please answer the following questions with simple Y/N answers.")
