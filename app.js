@@ -1,8 +1,8 @@
 //The Javascript portion of the About Me project
 var favoriteNumber = 13;
 var amountCorrect = 0;
-function yesNo() {
-  if (yesNo === "yes" || yesNo === "y") {
+function yesNo(x) {
+  if (x === "yes" || x === "y") {
     alert("Nicely Done!");
     amountCorrect += 1;
   } else {
@@ -12,6 +12,8 @@ function yesNo() {
 function quiz() {
   var userName = prompt ("Let's get to know you! \nWhats your name?");
   alert("Great! Thanks" + " " + userName + ".");
+  var questionOne = prompt ("Alright let's start with an easy question.\nWas I born in Washington?").toLowerCase();
+  yesNo(questionOne);
 }
 // function quiz() {
 //     confirm("Please answer the following questions with simple Y/N answers.")
