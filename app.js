@@ -21,26 +21,34 @@ function yesNo(x) {
 // }
 function highLow (z) {
   var counter = 3;
-  while (z !== favoriteNumber && counter >= 0){
+  while (z !== favoriteNumber && counter >= 1){
     console.log("running while loop");
     if (z >= favoriteNumber) {
       console.log("inside while/if");
-      z = parseInt(prompt ("Too high!"));
+      z = parseInt(prompt ("Too high!" + "\nTries remaining: " + counter));
       --counter;
       console.log(counter);
     }
-    else if (z <= favoriteNumber){
+    if (z <= favoriteNumber){
       console.log("inside while/elseif");
       z = parseInt(prompt ("Too low!"));
       --counter;
       console.log(counter);
     }
   }
+  if (z === favoriteNumber){
+    console.log(favoriteNumber);
+    z = alert ("Congratulations, that is correct.");
+  }
+  else if (z !== favoriteNumber) {
+    z = alert ("Well, you tried?");
+  }
+  //if statement
 }
-
+//should the second if statement be an else if statement ?
 function quiz() {
   var userName = prompt ("Let's get to know you! \nWhats your name?").toLowerCase();
-  alert("Great! Thanks");
+  alert("Great! Thanks " + userName);
   var questionOne = prompt ("Alright let's start with an easy question.\nWas I born in Washington?").toLowerCase();
   yesNo(questionOne);
   console.log(amountCorrect);
