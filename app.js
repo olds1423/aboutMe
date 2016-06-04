@@ -13,7 +13,7 @@ function yesNo(x) {
 }
 function multiChoice (y){
   //dont i need to define a parameter inside of multiChoice???
-  if (y === states.indexOf(questionFive)){
+  if (y === states.indexOf()){
     alert("Oh my god am i getting somewhere?");
     amountCorrect += 1;
   } else {
@@ -68,6 +68,7 @@ function quiz() {
   yesNo(questionFour);
   console.log(amountCorrect);
   var questionFive = prompt ("Name a state I lived in.").toLowerCase();
+  var questionFive;
   multiChoice(questionFive);
   console.log(questionFive);
   var questionSix = parseInt(prompt ("Let's try something tricky now,\nWhats my favorite number?\nFor added difficulty, you only get 4 tries."));
