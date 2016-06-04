@@ -9,6 +9,15 @@ function yesNo(x) {
     alert("Sorry thats not correct, keep trying!");
   }
 }
+function multiChoice (y){
+  if (multiChoice === ["washington", "idaho", "montana", "hawaii", "oregon"]){
+    alert("Oh my god am i getting somewhere?");
+    amountCorrect += 1;
+  } else {
+    alert("of course not");
+  }
+}
+
 function quiz() {
   var userName = prompt ("Let's get to know you! \nWhats your name?").toLowerCase();
   alert("Great! Thanks");
@@ -26,6 +35,7 @@ function quiz() {
   var questionFour = prompt ("Was that something new....Skynet?!").toLowerCase();
   yesNo(questionFour);
   console.log(amountCorrect);
+  multiChoice();
   //must be at bottom for global userName to be defined?
 }
 
