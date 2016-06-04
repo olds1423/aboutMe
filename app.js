@@ -13,7 +13,7 @@ function yesNo(x) {
 }
 function multiChoice (y){
   //dont i need to define a parameter inside of multiChoice???
-  if (y === states.indexOf){
+  if (y === states.indexOf(questionFive)){
     alert("Oh my god am i getting somewhere?");
     amountCorrect += 1;
   } else {
