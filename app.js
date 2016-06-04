@@ -14,6 +14,7 @@ function quiz() {
   alert("Great! Thanks" + " " + userName + ".");
   var questionOne = prompt ("Alright let's start with an easy question.\nWas I born in Washington?").toLowerCase();
   yesNo(questionOne);
+//testing!!!!!!
 }
 // function quiz() {
 //     confirm("Please answer the following questions with simple Y/N answers.")
