@@ -10,19 +10,22 @@ function yesNo(x) {
   }
 }
 function quiz() {
-  var userName = prompt ("Let's get to know you! \nWhats your name?");
+  var userName = prompt ("Let's get to know you! \nWhats your name?").toLowerCase();
   alert("Great! Thanks");
-  var questionOne = prompt ("Alright let's start with an easy question.\nWas I born in Washington?");
+  var questionOne = prompt ("Alright let's start with an easy question.\nWas I born in Washington?").toLowerCase();
   yesNo(questionOne);
   console.log(amountCorrect);
   console.log(questionOne);
   console.log(userName);
-  var questionTwo = prompt ("Did I attend an amazing coding accelerator?");
+  var questionTwo = prompt ("Did I attend an amazing coding accelerator?").toLowerCase();
   yesNo(questionTwo);
+  console.log(amountCorrect);
   var questionThree = prompt ("Was that coding accelerator the start of something new?").toLowerCase();
   yesNo(questionThree);
-  var questionFour = prompt ("Alright let's start with an easy question.\nWas I born in Washington?");
+  console.log(amountCorrect);
+  var questionFour = prompt ("Was that something new....Skynet?!").toLowerCase();
   yesNo(questionFour);
+  console.log(amountCorrect);
   //must be at bottom for global userName to be defined?
 }
 
