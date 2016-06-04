@@ -1,6 +1,7 @@
 //The Javascript portion of the About Me project
 var favoriteNumber = 13;
 var amountCorrect = 0;
+var userName;
 var states = ["washington", "idaho", "montana", "hawaii", "oregon"];
 function yesNo(x) {
   if (x === "yes" || x === "y") {
@@ -10,18 +11,18 @@ function yesNo(x) {
     alert("Sorry thats not correct, keep trying!");
   }
 }
-// function multiChoice (){
-//   //dont i need to define a parameter inside of multiChoice???
-//   if (multiChoice === states.indexOf("")){
-//     alert("Oh my god am i getting somewhere?");
-//     amountCorrect += 1;
-//   } else {
-//     alert("of course not");
-//   }
-// }
+function multiChoice (y){
+  //dont i need to define a parameter inside of multiChoice???
+  if (y === states.indexOf){
+    alert("Oh my god am i getting somewhere?");
+    amountCorrect += 1;
+  } else {
+    alert("of course not");
+  }
+}
 function highLow (z) {
   var counter = 3;
-  while (z !== favoriteNumber && counter >= 1){
+  while (z !== favoriteNumber && counter >= 1) {
     console.log("running while loop");
     if (z >= favoriteNumber) {
       console.log("inside while/if");
@@ -35,6 +36,9 @@ function highLow (z) {
       --counter;
       console.log(counter);
     }
+    // else if (z === NaN) {
+    //   z = alert ("Can't believe I have to say this, but numbers only please. Thats going to cost ya.\n" + "Tries remaining: " + counter );
+    // }
   }
   if (z === favoriteNumber){
     console.log(favoriteNumber);
@@ -63,9 +67,9 @@ function quiz() {
   var questionFour = prompt ("Was that something new....Skynet?!").toLowerCase();
   yesNo(questionFour);
   console.log(amountCorrect);
-  // var questionFive = prompt ("Name a state I lived in.").toLowerCase();
-  // multiChoice(questionFive);
-  // console.log(questionFive);
+  var questionFive = prompt ("Name a state I lived in.").toLowerCase();
+  multiChoice(questionFive);
+  console.log(questionFive);
   var questionSix = parseInt(prompt ("Let's try something tricky now,\nWhats my favorite number?\nFor added difficulty, you only get 4 tries."));
   highLow (questionSix);
   //must be at bottom for global userName to be defined?
