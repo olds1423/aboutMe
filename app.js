@@ -1,6 +1,7 @@
 //The Javascript portion of the About Me project
 var favoriteNumber = 13;
 var amountCorrect = 0;
+var states = ["washington", "idaho", "montana", "hawaii", "oregon"];
 function yesNo(x) {
   if (x === "yes" || x === "y") {
     alert("Hoorah for Let's keep going.");
@@ -9,8 +10,9 @@ function yesNo(x) {
     alert("Sorry thats not correct, keep trying!");
   }
 }
-function multiChoice (y){
-  if (multiChoice === ["washington", "idaho", "montana", "hawaii", "oregon"]){
+function multiChoice (){
+  //dont i need to define a parameter inside of multiChoice???
+  if (multiChoice === states.indexOf("")){
     alert("Oh my god am i getting somewhere?");
     amountCorrect += 1;
   } else {
@@ -35,7 +37,9 @@ function quiz() {
   var questionFour = prompt ("Was that something new....Skynet?!").toLowerCase();
   yesNo(questionFour);
   console.log(amountCorrect);
-  multiChoice();
+  var questionFive = prompt ("Name a state I lived in.").toLowerCase();
+  multiChoice(questionFive);
+  console.log(questionFive);
   //must be at bottom for global userName to be defined?
 }
 
